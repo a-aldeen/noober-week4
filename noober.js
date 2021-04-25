@@ -17,7 +17,6 @@ window.addEventListener('DOMContentLoaded', async function() {
 
     // Create a variable to store each ride in memory
     let rideData = ridesMasterData[i]
-    console.log(`The passenger name is ${rideData.passengerDetails.first} ${rideData.passengerDetails.last}`)
   
     // Create a variable for the HTML element we're going to add
     let rideList = document.querySelector(`.rides`)
