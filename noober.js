@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 
     // Insert HTML into the rides element, using the data from each ride
 
-    // Setting the condition for Noober Purple
+    // Setting the condition and inserting HTML for Noober Purple
     if (rideData.purpleRequested == true) {
 
     rideList.insertAdjacentHTML(`beforeend`, `
@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 `)  
     }
 
-    // Setting the condition for Noober XL
+    // Setting the condition and inserting HTML for Noober XL
   else if (rideData.purpleRequested != true && rideData.numberOfPassengers >3){
     rideList.insertAdjacentHTML(`beforeend`, `
     <h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-green-500">
@@ -94,7 +94,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 `)
   }
 
-    // Setting the condition for Noober X
+    // Setting the condition and inserting HTML for Noober X
   else if (rideData.purpleRequested != true && rideData.numberOfPassengers <4){
     rideList.insertAdjacentHTML(`beforeend`, `
     <h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-red-500">
